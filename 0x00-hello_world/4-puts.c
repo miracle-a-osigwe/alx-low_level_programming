@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* Use PUTS function to print */
+/**
+ * Use PUTS function to print
+ */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
