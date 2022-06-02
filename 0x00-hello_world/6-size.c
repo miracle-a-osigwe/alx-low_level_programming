@@ -3,7 +3,9 @@
 
 
 /**
- *Use SIZEOF to get the size of different datatypes
+ * main - Use SIZEOF to get the size of different datatypes
+ *
+ *Return: 0 when completed else error
  */
 int main(void)
 {
