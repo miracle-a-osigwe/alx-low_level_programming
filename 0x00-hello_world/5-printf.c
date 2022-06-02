@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * Use PRINTF function to print
+ * main - Use PRINTF function to print
+ *
+ *Return: 0 when completed else error
  */
 
 int main(void)
