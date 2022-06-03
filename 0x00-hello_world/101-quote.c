@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	const char report[]="and that piece of art is useful\" - Dora Korpar, 20\
-15-10-19\n";
+	const char report[] = "and that piece of art is useful\" - Dora Korpar, 20\
+15-10-19";
 
 	syscall(SYS_write, 1, report, sizeof(report));
 
