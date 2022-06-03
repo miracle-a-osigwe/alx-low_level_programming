@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	const char report[] = "and that piece of art is useful\" - Dora Korpar, 20\
-15-10-19";
+	const char report[59] = "and that piece of art is useful\" - Dora Korpar, 20\
+15-10-19\n";
 
-	syscall(SYS_write, 1, report, sizeof(report));
+	syscall(SYS_write, 2, report, sizeof(report));
 
 	return (1);
 }
