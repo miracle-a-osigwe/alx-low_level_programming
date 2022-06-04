@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - Check if the value n is positive or negative
+/**
+ * main - Check if the value n is positive or negative
+ *
  * Return: 0 when completed
  */
 
@@ -15,7 +17,6 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 
-	/* your code goes there */
 	if (n < 0)
 		printf("%d is negative\n", n);
 	else if (n > 0)
