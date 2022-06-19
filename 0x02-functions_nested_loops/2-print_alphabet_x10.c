@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Calls _putchar
+ * print_alphabet_x10 - Calls _putchar
  * Description - Prints the alphabet in lower case 10x
  *
  */
