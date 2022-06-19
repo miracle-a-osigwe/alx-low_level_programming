@@ -4,11 +4,11 @@
  * main - Call _putchar.c
  *
  * Description - Prints _putchar with a new line
- * Return - 1 Success else failed
+ * Return - 0 Success else failed
  */
 
 
-int main()
+int main(void)
 {
 	int n = 0;
 	char result[] = "_putchar\n";
@@ -20,5 +20,5 @@ int main()
 		n++;
 	}
 
-	return (1);
+	return (0);
 }
