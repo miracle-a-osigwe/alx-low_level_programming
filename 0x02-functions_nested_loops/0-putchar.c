@@ -3,7 +3,7 @@
 /**
  * main - Call _putchar.c
  *
- * Description - Prints _putchar with a new line
+ * Description: Prints _putchar with a new line
  * Return - 0 Success else failed
  */
 
