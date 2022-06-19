@@ -1,15 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Print _putchar
+ * main - Call _putchar.c
  *
- * Return - Completed
+ * Description - Prints _putchar with a new line
+ * Return - 1 Success else failed
  */
+
 
 int main()
 {
-	printf("_putchar\n");
+	int n = 0;
+	char result[] = "_putchar\n";
 
-	return (0);
+	while (result[n] != '\0')
+	{
+		_putchar(result[n]);
 
+		n++;
+	}
+
+	return (1);
 }
