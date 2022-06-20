@@ -6,7 +6,6 @@
  *
  *@x: first input
  *@y: second input
- *@result: output
  *Description: Add two integers and return the value
  *
  *Return: the result
