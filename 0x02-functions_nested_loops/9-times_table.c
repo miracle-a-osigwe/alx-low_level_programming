@@ -1,12 +1,8 @@
 #include "main.h"
 
-
 /**
- *
  * times_table - Function call
- *
  * Description: Prints 9 times table
- *
  */
 
 void times_table(void)
@@ -25,10 +21,10 @@ void times_table(void)
 			{
 				_putchar(result/10 + '0');
 				_putchar(result%10 + '0');
-
 				if (y != 9)
 				{
 					_putchar(',');
+					_putchar(' ');
 				}
 			}
 			else
@@ -37,25 +33,16 @@ void times_table(void)
 				{
 					_putchar(' ');
 				}
-
 				_putchar(result + '0');
-
 				if (y != 9)
 				{
 					_putchar(',');
-
+					_putchar(' ');
 				}
 			}
-
-			if (y != 9)
-			{
-				_putchar(' ');
-			}
-
 			y++;
 		}
 		x++;
-
 		_putchar('\n');
 	}
 }
