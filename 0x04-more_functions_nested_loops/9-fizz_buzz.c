@@ -5,10 +5,10 @@
  *
  *Description: Print 1 to 10 and fizz-buzz
  *
- *Return: Empty
+ *Return: 0 Success
  */
 
-void main(void)
+int main(void)
 {
 	int x = 1;
 
@@ -16,22 +16,26 @@ void main(void)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (x % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (x % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", x);
+			printf("%d", x);
+		}
+		if (x != 100)
+		{
+			printf(" ");
 		}
 		x++;
 	}
 	printf("\n");
-	return;
+	return (0);
 }
