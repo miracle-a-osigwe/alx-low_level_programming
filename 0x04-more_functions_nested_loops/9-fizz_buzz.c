@@ -5,9 +5,10 @@
  *
  *Description: Print 1 to 10 and fizz-buzz
  *
+ *Return: Empty
  */
 
-int main(void)
+void main(void)
 {
 	int x = 1;
 
@@ -32,5 +33,5 @@ int main(void)
 		x++;
 	}
 	printf("\n");
-	return (0);
+	return;
 }
