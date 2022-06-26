@@ -24,7 +24,7 @@ void print_triangle(int size)
 				x--;
 			}
 
-			while(counter > 0)
+			while (counter > 0)
 			{
 				_putchar('#');
 				counter--;
