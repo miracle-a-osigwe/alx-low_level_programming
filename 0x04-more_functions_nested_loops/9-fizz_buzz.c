@@ -5,7 +5,6 @@
  *
  *Description: Print 1 to 10 and fizz-buzz
  *
- *Return: 0 when completed
  */
 
 int main(void)
