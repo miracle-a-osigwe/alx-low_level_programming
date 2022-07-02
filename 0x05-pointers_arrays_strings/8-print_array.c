@@ -15,6 +15,11 @@ void print_array(int *a, int n)
 {
 	int x = 0;
 
+	if (n <= 0)
+	{
+		printf("\n");
+	}
+
 	while (x < n)
 	{
 		if (x + 1 == n)
