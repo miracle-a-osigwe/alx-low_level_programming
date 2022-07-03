@@ -12,10 +12,24 @@
 
 char *cap_string(char *s)
 {
-	int x = 0, res, p, b;
+	int x = 0, res, up, p, b;
 
 	while (s[x] != '\0')
 	{
+		if (x == 0)
+		{
+			up = isupper(s[x]);
+
+			if (up != 0)
+			{
+				s[x] = s[x];
+			}
+			else
+			{
+				s[x] = s[x] - 32;
+			}
+		}
+
 		res = isdigit(s[x - 1]);
 		p = ispunct(s[x - 1]);
 		b = isblank(s[x - 1]);
@@ -32,7 +46,7 @@ char *cap_string(char *s)
 			}
 			else
 			{
-				s[x] = s[x] -32;
+				s[x] = s[x] - 32;
 			}
 		}
 		else if (s[x - 1] == '\n')
