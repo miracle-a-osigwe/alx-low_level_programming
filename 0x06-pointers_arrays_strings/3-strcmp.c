@@ -15,7 +15,7 @@
 
 int *_strcmp(char *des, char *s2)
 {
-	char *result = strcmp(s1, s2);
+	int result = strcmp(s1, s2);
 
 	return (result);
 }
