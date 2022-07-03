@@ -3,7 +3,7 @@
 
 
 /**
- * *_strcmp - Function call
+ * _strcmp - Function call
  *Description: Compare two strings
  *
  *@s1: First input string
@@ -13,7 +13,7 @@
  */
 
 
-int *_strcmp(char *des, char *s2)
+int _strcmp(char *des, char *s2)
 {
 	int result = strcmp(s1, s2);
 
