@@ -1,7 +1,5 @@
-#include <string.h>
 #include "main.h"
 #include <ctype.h>
-
 
 /**
  * *cap_string - Function call
@@ -12,15 +10,18 @@
 
 char *cap_string(char *s)
 {
-	int x = 0, res, up, p, b;
+	int x = 0, res, c, p, b;
+	char a;
 
 	while (s[x] != '\0')
 	{
-		if (x == 0)
-		{
-			up = isupper(s[x]);
+		res = isdigit(s[x - 1]), p = ispunct(s[x - 1]);
+		b = isblank(s[x - 1]), a = s[x - 1], c = s[x];
 
-			if (up != 0)
+		if ((c >= 97 && c <= 122 && (p != 0 || b != 0 || a == '\n'))
+		    || x == 0)
+		{
+			if (res != 0 || s[x - 1] == '-')
 			{
 				s[x] = s[x];
 			}
@@ -28,36 +29,11 @@ char *cap_string(char *s)
 			{
 				s[x] = s[x] - 32;
 			}
-		}
-
-		res = isdigit(s[x - 1]);
-		p = ispunct(s[x - 1]);
-		b = isblank(s[x - 1]);
-
-		if (s[x] >= 97 && s[x] <= 122 && (p != 0 || b != 0))
-		{
-			if (res != 0)
-			{
-				s[x] = s[x];
-			}
-			else if (s[x - 1] == '-')
-			{
-				s[x] = s[x];
-			}
-			else
-			{
-				s[x] = s[x] - 32;
-			}
-		}
-		else if (s[x - 1] == '\n')
-		{
-			s[x] = s[x] - 32;
 		}
 		else
 		{
 			s[x] = s[x];
 		}
-
 		x++;
 	}
 	return (s);
