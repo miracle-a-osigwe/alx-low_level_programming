@@ -4,13 +4,13 @@
 
 /**
  * *_strncat - Function call
- * Description: Concatenate two strings until nth value
+ *Description: Concatenate two strings until nth value
  *
- * @dest : First input string
- * @src : Second input string
- * @n : Number of values to concatenate
+ *@dest: First input string
+ *@src: Second input string
+ *@n: Number of values to concatenate
  *
- *Return : Concatented strings
+ *Return: Concatented strings
  */
 
 
