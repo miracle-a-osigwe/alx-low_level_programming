@@ -12,7 +12,7 @@ char *string_toupper(char *s)
 {
 	int x = 0;
 
-	while (s[x] != '\0')
+	for (; s[x] != '\0'; x++)
 	{
 		if ((s[x] >= 65) && (s[x] <= 90));
 		{
@@ -22,7 +22,5 @@ char *string_toupper(char *s)
 		{
 			s[x] = s[x] - 32;
 		}
-
-		x++;
 	}
 }
