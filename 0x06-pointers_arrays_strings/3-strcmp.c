@@ -13,7 +13,7 @@
  */
 
 
-char *_strcmp(char *des, char *s2)
+int *_strcmp(char *des, char *s2)
 {
 	char *result = strcmp(s1, s2);
 
