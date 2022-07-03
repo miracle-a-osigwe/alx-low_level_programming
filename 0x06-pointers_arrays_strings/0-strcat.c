@@ -3,13 +3,13 @@
 
 
 /**
- * _strcat - Function call
+ * *_strcat - Function call
  *Description: Concatenate two strings
  *
- * @dest : First input string
- * @src : Second input string
+ *@dest: First input string
+ *@src: Second input string
  *
- * Return : @result Concatented strings
+ *Return: @result Concatented strings
  */
 
 
