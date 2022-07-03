@@ -20,5 +20,4 @@ void reverse_array(int *a, int n)
 		a[n - x - 1] = temp;
 		x++;
 	}
-	_putchar('\n');
 }
