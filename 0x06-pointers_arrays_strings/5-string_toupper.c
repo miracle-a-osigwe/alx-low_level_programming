@@ -10,11 +10,11 @@
 
 char *string_toupper(char *s)
 {
-	int len = strlen(s), x = 0;
+	int x = 0;
 
 	while (s[x] != '\0')
 	{
-		if (s[x] >= 65 && s[x] <= 90);
+		if ((s[x] >= 65) && (s[x] <= 90));
 		{
 			continue;
 		}
