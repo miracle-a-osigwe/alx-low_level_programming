@@ -16,7 +16,7 @@ char *string_toupper(char *s)
 	{
 		if ((s[x] >= 65) && (s[x] <= 90));
 		{
-			continue;
+			s[x] = s[x];
 		}
 		else
 		{
