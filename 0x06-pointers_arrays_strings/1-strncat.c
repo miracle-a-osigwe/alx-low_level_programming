@@ -3,7 +3,7 @@
 
 
 /**
- * _strncat - Function call
+ * *_strncat - Function call
  * Description: Concatenate two strings until nth value
  *
  * @dest : First input string
