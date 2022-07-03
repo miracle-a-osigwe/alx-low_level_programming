@@ -4,12 +4,12 @@
 
 /**
  * _strcat - Function call
- * Description: Concatenate two strings
+ *Description: Concatenate two strings
  *
  * @dest : First input string
  * @src : Second input string
  *
- *Return : Concatented strings
+ * Return : @result Concatented strings
  */
 
 
