@@ -6,6 +6,7 @@
  * *string_toupper - Function call
  *Description: Converts lowercase to uppercase
  *@s: input to the function
+ * Return: upper values strings
  */
 
 char *string_toupper(char *s)
