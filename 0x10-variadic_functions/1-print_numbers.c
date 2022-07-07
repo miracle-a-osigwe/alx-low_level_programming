@@ -12,6 +12,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nlist;
+
 	int i, x = 1, y = (int) n;
 
 	va_start(nlist, n);
@@ -20,7 +21,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		i = va_arg(nlist, int);
 
-		if (x < y)
+		if (separator == NULL)
+		{
+			break;
+		}
+		else if (x < y)
 		{
 			printf("%d%s", i, separator);
 		}
