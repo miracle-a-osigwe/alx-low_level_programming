@@ -15,6 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i, x = 1, y = (int) n;
 
 	va_start(nlist, n);
+
 	while (x <= y)
 	{
 		i = va_arg(nlist, int);
