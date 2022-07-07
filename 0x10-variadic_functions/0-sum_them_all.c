@@ -14,12 +14,19 @@ int sum_them_all(const unsigned int n, ...)
 	va_list nlist;
 	int i, j = 0, x = 0, y = (int) n;
 
-	va_start(nlist, n);
-	for (i = 0; x <= y; i = va_arg(nlist, int))
+	if (n == 0)
 	{
-		j += i;
-		x++;
+		return (0);
 	}
-	va_end(nlist);
-	return (j);
+	else
+	{
+		va_start(nlist, n);
+		for (i = 0; x <= y; i = va_arg(nlist, int))
+		{
+			j += i;
+			x++;
+		}
+		va_end(nlist);
+		return (j);
+	}
 }
