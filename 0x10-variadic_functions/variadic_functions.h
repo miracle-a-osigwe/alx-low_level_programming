@@ -3,7 +3,7 @@
  *
  */
 
-ifndef VARIADIC_FUNCTIONS
+#ifndef VARIADIC_FUNCTIONS
 
 #define VARIADIC_FUNCTIONS
 
