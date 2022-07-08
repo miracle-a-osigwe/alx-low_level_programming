@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+#include <stddef.h>
 #include "variadic_functions.h"
 
 /**
@@ -22,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		i = va_arg(nlist, int);
 
-		if (strcmp(separator, "NULL") == 0)
+		if (separator == NULL)
 		{
 			printf("%d", i);
 		}
