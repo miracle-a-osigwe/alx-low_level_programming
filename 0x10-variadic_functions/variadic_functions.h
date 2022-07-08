@@ -1,12 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS
-
 #define VARIADIC_FUNCTIONS
-
 /**
  *variadic_functions - C function declarations and macro definitions
- *
  */
-
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
