@@ -1,4 +1,4 @@
-#do_ifndef MAIN /**
+#ifndef MAIN /**
  *variadic_functions - C function declarations and macro definitions
  */
 
