@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <string.h>
 #include "variadic_functions.h"
 
 /**
@@ -21,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		i = va_arg(nlist, int);
 
-		if (separator == NULL)
+		if (strcmp(separator, "NULL") == 0)
 		{
 			printf("%d", i);
 		}
@@ -31,8 +32,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%d\n", i);
+			printf("%d", i);
 		}
 		x++;
 	}
+	printf("\n");
 }
