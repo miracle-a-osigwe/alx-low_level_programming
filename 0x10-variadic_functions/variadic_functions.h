@@ -1,9 +1,8 @@
-#ifndef VARIADIC_FUNCTIONS
 /**
  *variadic_functions - C function declarations and macro definitions
  *
  */
-
+ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
 
 int _putchar(char c);
