@@ -1,11 +1,7 @@
-#ifndef COMMENT
-/**
+#do_ifndef MAIN /**
  *variadic_functions - C function declarations and macro definitions
  */
 
-#endif
-
-#ifndef MAIN
 #define MAIN
 
 int _putchar(char c);
