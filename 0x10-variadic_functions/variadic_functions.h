@@ -3,7 +3,7 @@
 #define VARIADIC_FUNCTIONS
 
 /**
- *C function declarations and macro definitions
+ *variadic_functions.h - C function declarations and macro definitions
  *
  */
 
