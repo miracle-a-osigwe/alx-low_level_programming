@@ -5,7 +5,7 @@
 #include "variadic_functions.h"
 
 /**
- *print_strings - function call
+ *print_strings - Function call
  *Description: a function that prints strings.
  *@separator: string input to the function
  *@n: first number to print
@@ -15,17 +15,18 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list nlist;
 
-	int i, x = 1, y = (int) n;
+	int x = 1, y = (int) n;
 
 	va_start(nlist, n);
 
 	while (x <= y)
 	{
-		i = va_arg(nlist, int);
+		char * i;
+		i = va_arg(nlist, char *);
 
 		if (separator == NULL)
 		{
-			printf("%d", i);
+			printf("%s", i);
 		}
 		else if (i == NULL)
 		{
