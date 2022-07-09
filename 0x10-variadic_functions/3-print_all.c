@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	va_list nlist;
 	int x = 0, y = strlen(format) - 1, b, a, toggle;
 	float c;
-	char * d;
+	char *d;
 
 	va_start(nlist, format);
 
@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 	{
 		char i = format[x];
 
-		switch ( i )
+		switch (i)
 		{
 		case 'c':
 			a = va_arg(nlist, int);
@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
 			break;
 		case 'f':
 			c = va_arg(nlist, double);
-			printf("%.2f", c);
+			printf("%f", c);
 			toggle = 1;
 			break;
 		case 's':
