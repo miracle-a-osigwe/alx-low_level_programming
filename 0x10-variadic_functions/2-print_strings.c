@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (x <= y)
 	{
-		char * i;
+		char *i;
 
 		i = va_arg(nlist, char *);
 
