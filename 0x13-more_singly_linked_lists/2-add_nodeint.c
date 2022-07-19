@@ -4,7 +4,7 @@
 /**
  * add_nodeint - Function call
  * @head: pointer to the linkedlist node
- *@n: integer to add to the node
+ * @n: integer to add to the node
  *
  * Description: Adds a new node to the beginning of a listint_t
  * Return: the address of the new element or NULL if it failed
