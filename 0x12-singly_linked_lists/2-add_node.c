@@ -15,6 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (str == 0)
 	{
+		ptr->next = *head;
 		*head = ptr;
 	}
 	else
