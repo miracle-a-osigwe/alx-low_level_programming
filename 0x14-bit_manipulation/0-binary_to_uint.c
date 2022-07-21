@@ -9,51 +9,31 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int len, i = 0, power, rem, number, decimal = 0;
+	unsigned long int x;
+	int len, i = 0;
 
 	if (b == NULL)
 	{
 		return (0);
 	}
 
-	len = strlen(b) - 1;
+	len = strlen(b) - 1, b2 = 0;
 
-	while (i <= len)
+	while (len >= 0)
 	{
-		int c = b[i];
+		char c = b[len];
 
-		if (c != 48 && c != 49)
+		if (c != '0' && c != '1')
 		{
 			return (0);
 		}
+		if (b[len] & 1)
+		{
+			b2 *= 2;
+			x += b2;
+		}
+		len--;
 		i++;
 	}
-	number = atoi(b), i = 0;
-
-	while (number != 0)
-	{
-		rem = number % 10;
-		number /= 10;
-		power = (int) epow(1, i);
-		decimal += rem * power;
-		++i;
-	}
-	return (decimal);
-}
-
-
-/**
- * epow - Custom function
- * @x: input
- * @y: input
- * Description: A function to calculate the exponent of x to y
- * Return: Double datatype for the exponent
- */
-
-int epow(int x, int y)
-{
-	int result;
-
-	result = x << y;
-	return (result);
+	return (x);
 }
