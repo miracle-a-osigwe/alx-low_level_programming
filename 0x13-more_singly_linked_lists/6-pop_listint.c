@@ -14,19 +14,26 @@ int pop_listint(listint_t **head)
 	listint_t *temp;
 
 	temp = *head;
-	n = (*head)->n;
-	*head = (*head)->next;
-
-	resp = isdigit(n);
-
-	if (resp != 0)
+	if (temp != NULL)
 	{
-		free(temp);
-		return (0);
+		n = (*head)->n;
+		*head = (*head)->next;
+
+		resp = isdigit(n);
+
+		if (resp != 0)
+		{
+			free(temp);
+			return (0);
+		}
+		else
+		{
+			free(temp);
+			return (n);
+		}
 	}
 	else
 	{
-		free(temp);
-		return (n);
+		return (0);
 	}
 }
