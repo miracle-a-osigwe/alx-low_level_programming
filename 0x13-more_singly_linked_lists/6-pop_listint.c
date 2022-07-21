@@ -9,7 +9,8 @@
 
 int pop_listint(listint_t **head)
 {
-	int n, resp;
+	long n;
+	int resp;
 
 	listint_t *temp;
 
