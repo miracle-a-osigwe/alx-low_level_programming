@@ -10,8 +10,14 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
-	int len = strlen(b) - 1, i = 0, power, rem, number;
+	int len, i = 0, power, rem, number;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
+
+	len = strlen(b) - 1;
 	while (i <= len)
 	{
 		int c = b[i];
