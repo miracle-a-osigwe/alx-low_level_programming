@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = number % 10;
 		number /= 10;
-		power = (int) (epow(1, i) + 1e-9);
+		power = (int) epow(1, i);
 		decimal += rem * power;
 		++i;
 	}
@@ -48,6 +48,6 @@ int epow(int x, int y)
 {
 	int result;
 
-	result = x<<y;
+	result = x << y;
 	return (result);
 }
