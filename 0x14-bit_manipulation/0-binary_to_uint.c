@@ -9,8 +9,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal = 0;
-	int len, i = 0, power, rem, number;
+	int len, i = 0, power, rem, number, decimal = 0;
 
 	if (b == NULL)
 	{
@@ -18,6 +17,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	len = strlen(b) - 1;
+
 	while (i <= len)
 	{
 		int c = b[i];
