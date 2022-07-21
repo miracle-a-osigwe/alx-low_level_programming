@@ -10,8 +10,6 @@
 int pop_listint(listint_t **head)
 {
 	long n;
-	int resp;
-
 	listint_t *temp;
 
 	temp = *head;
@@ -20,19 +18,8 @@ int pop_listint(listint_t **head)
 	{
 		n = (*head)->n;
 		*head = (*head)->next;
-
-		resp = isdigit(n);
-
-		if (resp != 0)
-		{
-			free(temp);
-			return (0);
-		}
-		else
-		{
-			free(temp);
-			return (n);
-		}
+		free(temp);
+		return (n);
 	}
 	else
 	{
