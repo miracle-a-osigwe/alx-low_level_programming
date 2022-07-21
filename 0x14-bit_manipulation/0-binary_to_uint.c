@@ -28,9 +28,26 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = number % 10;
 		number /= 10;
-		power = (int) (pow(2, i) + 1e-9);
+		power = (int) (epow(1, i) + 1e-9);
 		decimal += rem * power;
 		++i;
 	}
 	return (decimal);
+}
+
+
+/**
+ * epow - Custom function
+ * @x: input
+ * @y: input
+ * Description: A function to calculate the exponent of x to y
+ * Return: Double datatype for the exponent
+ */
+
+int epow(int x, int y)
+{
+	int result;
+
+	result = x<<y;
+	return (result);
 }
